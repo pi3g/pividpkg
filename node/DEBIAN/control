@@ -1,0 +1,16 @@
+Package: node
+Version: 0.10.12
+Architecture: armhf
+Maintainer: pi3g
+Installed-Size: 18
+Depends: libc-ares2 (>= 1.7.3), libc6 (>= 2.13-28), libev4 (>= 1:4.04), libgcc1 (>= 1:4.4.0), libssl1.0.0 (>= 1.0.1), libstdc++6 (>= 4.3.0), libv8-3.8.9.20, zlib1g (>= 1:1.1.4)
+Breaks: buddycloud-server (<< 0.3.1-2), carto (<< 0.4.6+ds1-2~), coffeescript (<< 1.3.3-3~), node-bones (<< 2.0.1+ds1-3~), node-cli (<< 0.4.4~20120516-1~), node-express (<< 2.5.9-2~), node-get (<< 1.1.5+ds1-2~), node-jake (<< 0.2.32-2~), node-less (<< 1.3.0~20120310-3~), node-mapnik (<< 0.6.7-3~), node-mbtiles (<< 0.2.3-2~), node-optimist (<< 0.3.1-2~), node-semver (<< 1.0.13-2~), node-tilelive (<< 4.2.1-4~), node-uglify (<< 1.2.6-2~), node-vows (<< 0.6.3-2~), npm (<< 1.1.4~dfsg-2~), nodejs, node, npm
+Section: web
+Priority: extra
+Homepage: http://nodejs.org/
+Description: Node.js event-based server-side javascript engine
+ Node.js is similar in design to and influenced by systems like
+ Ruby's Event Machine or Python's Twisted.
+ .
+ It takes the event model a bit further - it presents the event
+ loop as a language construct instead of as a library.
