@@ -1,0 +1,9 @@
+Package: pivid
+Version: 0.0.1
+Architecture: armhf
+Maintainer: pi3g
+Installed-Size: 11
+Depends: node (>= 0.10.12), youtube-dl, omxplayer
+Priority: extra
+Homepage: http://pi3g.com
+Description: PiVid lets you play embedded web videos in omxplayer.

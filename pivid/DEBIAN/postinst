@@ -1,0 +1,6 @@
+#!/bin/sh
+
+set -e
+
+youtube-dl -U
+youtube-dl -U
