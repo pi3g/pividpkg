@@ -4,7 +4,7 @@ set -e
 
 git clone https://github.com/pi3g/pivid pividgit
 mkdir -p pivid/usr/share/pivid
-cp pividgit/node/* pivid/usr/share/pivid
+cp -r pividgit/node/* pivid/usr/share/pivid
 cd pivid/usr/share/pivid
 npm install express
 npm install jquery
