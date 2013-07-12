@@ -5,6 +5,8 @@ set -e
 git clone https://github.com/pi3g/pivid pividgit
 mkdir -p pivid/usr/share/pivid
 cp -r pividgit/node/* pivid/usr/share/pivid
+mkdir -p pivid/etc/init.d/
+cp pividgit/init.sh pivid/etc/init.d/pivid
 cd pivid/usr/share/pivid
 npm install express
 npm install jquery
@@ -15,3 +17,4 @@ dpkg -b pivid pivid_0.0.1.deb
 rm -rf pividgit
 rm pivid/DEBIAN/md5sums
 rm -r pivid/usr/share
+rm -r pivid/etc/
