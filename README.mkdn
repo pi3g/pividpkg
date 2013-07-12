@@ -1,0 +1,10 @@
+# How to install the packages
+1. get or create the desired package
+2. if you're trying to install PiVid, install node first
+3. run `sudo dpkg -i path/to/package`; if this fails, go to next step
+4. if the previous step complains about missing dependencies, run `sudo apt-get install -f`
+
+# How to create the packages
+1. clone this repository on your raspberry pi
+2. cd into the newly created directory
+3. run pivid.sh and/or node.sh
