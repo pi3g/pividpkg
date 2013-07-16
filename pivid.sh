@@ -4,7 +4,7 @@ set -e
 
 git clone https://github.com/pi3g/pivid pividgit
 mkdir -p pivid/usr/share/pivid
-cp -r pividgit/node/* pivid/usr/share/pivid
+cp -r pividgit/node/* pividgit/replace.user.js pivid/usr/share/pivid
 mkdir -p pivid/etc/init.d/
 cp pividgit/init.sh pivid/etc/init.d/pivid
 cd pivid/usr/share/pivid
