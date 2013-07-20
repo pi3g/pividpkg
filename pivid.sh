@@ -13,7 +13,7 @@ npm install jquery
 cd ../../..
 find usr -type f -printf 'usr/%P ' | xargs md5sum > DEBIAN/md5sums
 cd ..
-dpkg -b pivid pivid_0.0.1.deb
+dpkg -b pivid pivid_0.0.1_armhf.deb
 rm -rf pividgit
 rm pivid/DEBIAN/md5sums
 rm -r pivid/usr/share

@@ -10,6 +10,6 @@ mv node-v0.10.12-linux-arm-pi usr
 rm usr/LICENSE usr/README.md usr/ChangeLog 
 find usr -type f -printf 'usr/%P ' | xargs md5sum > DEBIAN/md5sums
 cd ..
-dpkg -b node node_0.10.12.deb
+dpkg -b node nodejs_0.10.12_armhf.deb
 rm -r node/usr
 rm node/DEBIAN/md5sums
