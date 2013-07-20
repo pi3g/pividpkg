@@ -2,6 +2,9 @@
 
 set -e
 
+VER="0.0.1"
+PKG=pivid_"$VER"_armhf.deb
+
 git clone https://github.com/pi3g/pivid pividgit
 mkdir -p pivid/usr/share/pivid
 cp -r pividgit/node/* pividgit/replace.user.js pivid/usr/share/pivid
@@ -13,7 +16,9 @@ npm install jquery
 cd ../../..
 find usr -type f -printf 'usr/%P ' | xargs md5sum > DEBIAN/md5sums
 cd ..
-dpkg -b pivid pivid_0.0.1_armhf.deb
+dpkg -b pivid $PKG
+
+# clean up
 rm -rf pividgit
 rm pivid/DEBIAN/md5sums
 rm -r pivid/usr/share
