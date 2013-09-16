@@ -20,6 +20,7 @@ dpkg -b pivid "pivid_${VER}_armhf.deb"
 
 # clean up
 rm -rf pividgit
+sed -i "/^Version/s/ .*$/ 0.0.0/" pivid/DEBIAN/control
 rm pivid/DEBIAN/md5sums
 rm -r pivid/usr/share
 rm -r pivid/etc/
