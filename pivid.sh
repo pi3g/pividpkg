@@ -2,7 +2,7 @@
 
 set -e
 
-VER="0.0.1"
+VER="0.0.2"
 PKG=pivid_"$VER"_armhf.deb
 
 git clone https://github.com/pi3g/pivid pividgit
