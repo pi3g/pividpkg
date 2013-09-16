@@ -1,4 +1,4 @@
 #!/bin/bash
 
 cd /usr/share/pivid
-exec node server.js
+exec node server.js "$@"
